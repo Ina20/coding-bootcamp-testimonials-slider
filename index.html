@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <script src="main.js"></script>
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,24 +17,35 @@
   </style>
 </head>
 <body>
-
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
-
-  Tanya Sinclair
-  UX Engineer
-
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
-
-  John Tarkpor
-  Junior Front-end Developer
-  
+  <div id="main">
+    <div id="sliders">
+      <div class="slide">
+        <img class="photo" src="./images/image-tanya.jpg">
+        <p class="about">
+          “ I’ve been interested in coding for a while but never taken the jump, until now.
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+          excited about the future. ”
+        </p>
+        <p class="name"><span>Tanya Sinclair</span> UX Engineer</p>
+      </div>
+      <div class="slide">
+        <img class="photo" src="./images/image-john.jpg">
+        <p class="about">
+          “ If you want to lay the best foundation possible I’d recommend taking this course.
+          The depth the instructors go into is incredible. I now feel so confident about
+          starting up as a professional developer. ”
+        </p>
+        <p class="name"><span>John Tarkpor</span> Junior Front-end Developer</p>
+      </div>
+    </div>
+    <div id="buttons">
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Ina20/coding-bootcamp-testimonials-slider" target="_blank">Ina</a>.
   </div>
 </body>
 </html>
