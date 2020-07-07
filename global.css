@@ -44,10 +44,29 @@ body {
   color: hsl(240, 38%, 20%);
 }
 #buttons {
-  background: blue;
   display: flex;
+  position: relative;
+  bottom: 40px;
+  left: 125px;
+  box-shadow: 3px 3px 8px hsl(240, 18%, 77%);
+  border-radius: 50px 50px 50px 50px;
 }
 .photo {
   float: right;
   padding: 60px 95px 20px 0;
+}
+button {
+  border: none;
+  height: 35px;
+  width: 35px;
+  color: hsl(240, 18%, 77%);
+  background: #fff;
+  font-size: 16px;
+
+}
+#left {
+  border-radius: 50px 0 0 50px;
+}
+#right {
+  border-radius: 0 50px 50px 0;
 }
